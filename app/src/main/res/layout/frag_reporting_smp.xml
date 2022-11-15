@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ic_gradient_login_backgroundcolor">
+
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/cvReportSmp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:visibility="gone"
+       android:background="@drawable/ic_gradient_login_backgroundcolor"
+       >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:background="@color/purple_200"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/llreportingsmp1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="15dp"
+       android:background="@drawable/white_button"
+       android:orientation="vertical"
+       android:padding="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.constraintlayout.widget.Guideline
+          android:id="@+id/guideLine"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_constraintGuide_percent="0.55"/>
+
+
+      <LinearLayout
+          android:id="@+id/llcollege"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+         <TextView
+             android:id="@+id/tvCollegeName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:maxLines="2"
+             android:textColor="@color/DarkText"
+             android:textSize="16sp"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:id="@+id/llCandidate"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/llCandidateCode">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:text="Candidate Name :"
+             android:textColor="@color/Date_text"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/tvCandidateName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+
+             android:ellipsize="end"
+             android:maxLines="1"
+             android:textColor="@color/DarkText"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/llCandidateCode"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/llcollege">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:text="Candidate Code :"
+             android:textColor="@color/Date_text"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/tvCandidateCode"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+
+             android:ellipsize="end"
+             android:maxLines="1"
+             android:textColor="@color/DarkText"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/llExam"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:orientation="vertical"
+          android:visibility="gone"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="@id/guideLine"
+          app:layout_constraintTop_toBottomOf="@id/llCandidate">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:text="Course Code:"
+             android:textColor="@color/Date_text"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/tvCourseCode"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:ellipsize="end"
+
+             android:maxLines="1"
+             android:textColor="@color/DarkText"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:id="@+id/llAdmission"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/llCourse">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:text="Semester :"
+             android:textColor="@color/Date_text"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/tvSemester"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:ellipsize="end"
+             android:maxLines="1"
+             android:textColor="@color/DarkText"
+             android:textStyle="bold"
+             android:text="First" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/llCourse"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="10dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/llCandidate"
+          >
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:text="QP Code :"
+             android:textColor="@color/Date_text"
+             android:textStyle="bold" />
+         <TextView
+             android:id="@+id/tvCourseName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ellipsize="end"
+             android:maxLines="1"
+             android:layout_marginTop="8dp"
+             android:textColor="@color/DarkText"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/llTime"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/llAdmission">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:text="Time :"
+             android:textColor="@color/Date_text"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/tvTime"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:ellipsize="end"
+             android:maxLines="1"
+             android:text="09:30-12:30"
+             android:textColor="@color/DarkText"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/llSemester"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="10dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="@id/guideLine"
+          app:layout_constraintTop_toBottomOf="@id/llCourse"
+          android:visibility="gone">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:text="Exam :"
+             android:textColor="@color/Date_text"
+             android:textStyle="bold" />
+         <TextView
+             android:id="@+id/tvExam"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ellipsize="end"
+
+             android:maxLines="2"
+             android:layout_marginTop="8dp"
+             android:textColor="@color/DarkText"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/llCoursecode"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/llTime">
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:text="Year of Admission :"
+             android:textColor="@color/Date_text"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/tvYearofAdmission"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+
+             android:ellipsize="end"
+             android:maxLines="1"
+             android:text="2020"
+             android:textColor="@color/DarkText"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+   <ProgressBar
+       android:id="@+id/reportProgress"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:visibility="gone"
+       android:layout_centerInParent="true"
+
+       />
+
+</RelativeLayout>

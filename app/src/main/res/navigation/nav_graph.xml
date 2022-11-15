@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.kefi.demo.commonModule.login.view.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_answerSheetScan"
+            app:destination="@id/answerSheetScan" />
+    </fragment>
+    <fragment
+        android:id="@+id/answerSheetScan"
+        android:name="com.kefi.demo.commonModule.Scanner.AnswerSheetScan"
+        android:label="AnswerSheetScan" >
+        <action
+            android:id="@+id/action_answerSheetScan_to_reportingSMP"
+            app:destination="@id/reportingSMP" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportingSMP"
+        android:name="com.kefi.demo.commonModule.reportingSMP.view.ReportingSMP"
+        android:label="ReportingSMP" >
+        <action
+            android:id="@+id/action_reportingSMP_to_answerSheetScan"
+            app:destination="@id/answerSheetScan" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SLCM SCANNER</string>
+
+    <string name="password_warning">Password must contain at least 8 characters including an uppercase,lowercase,alphanumeric and special character</string>
+    <string name="email_warning">Please enter registered email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="PressToExit">Press again to exit</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+</resources>
